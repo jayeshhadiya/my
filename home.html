@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jayesh Hadiya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      font-family: 'Georgia', serif;
+      color: #222;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      padding: 0 20px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* For small screens - show quote vertically on left side */
+    @media (max-width: 600px) {
+      body {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+      }
+
+      h1 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 1.1rem;
+        text-align: left;
+        padding: 0;
+      }
+
+      footer {
+        bottom: 10px;
+        right: 10px;
+        left: auto;
+        text-align: right;
+      }
+    }
+
+    @media (min-width: 601px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Learning, growing, dreaming, and rising!</h1>
+  <footer>© jayeshhadiya</footer>
+</body>
+</html>
